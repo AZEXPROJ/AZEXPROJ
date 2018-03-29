@@ -3,4 +3,11 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name = "green" >#218282</color>
+    <color name = "ethereal" >#43a9b6</color>
+    <color name = "offwhite" >#dbdcd1</color>
+    <color name = "darkblue" >	#44515c</color>
+    <color name = "blue" >	#517784</color>
+
+
 </resources>
