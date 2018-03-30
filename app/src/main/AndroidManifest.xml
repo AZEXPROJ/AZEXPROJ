@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/aa"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/aa"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
