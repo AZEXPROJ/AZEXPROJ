@@ -12,7 +12,7 @@
         android:id="@+id/imageView2"
         android:layout_width="293dp"
         android:layout_height="77dp"
-        app:srcCompat="@drawable/maqolat"
+        app:srcCompat="@drawable/maqola"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,7 +28,7 @@
         android:id="@+id/imageView3"
         android:layout_width="293dp"
         android:layout_height="77dp"
-        app:srcCompat="@drawable/nageha"
+        app:srcCompat="@drawable/nageh"
         android:layout_marginRight="8dp"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginLeft="8dp"
@@ -43,7 +43,7 @@
     <ImageView
         android:id="@+id/imageView4"
 
-        app:srcCompat="@drawable/videohat"
+        app:srcCompat="@drawable/vedioes"
         android:layout_width="293dp"
         android:layout_height="77dp"
         android:layout_marginLeft="8dp"

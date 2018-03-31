@@ -8,19 +8,25 @@
     tools:context="com.example.osama.azexproj.quotes">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView1"
         android:layout_width="357dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/maqolat"
-        tools:layout_editor_absoluteY="140dp"
-        tools:layout_editor_absoluteX="2dp"
-
-        />
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.545"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.343"
+        app:srcCompat="@drawable/maqola" />
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="357dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/nageha"
+        app:srcCompat="@drawable/nageh"
 
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_marginBottom="8dp"
@@ -33,10 +39,10 @@
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintVertical_bias="0.622" />
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView3"
         android:layout_width="357dp"
         android:layout_height="74dp"
-        app:srcCompat="@drawable/videohat"
+        app:srcCompat="@drawable/vedioes"
 
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="8dp"
