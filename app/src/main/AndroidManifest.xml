@@ -6,7 +6,7 @@
         android:allowBackup="true"
         android:icon="@mipmap/aa"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/aa"
+        android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
@@ -16,7 +16,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".motivation"></activity>
+        <activity android:name=".motivation" />
+        <activity android:name=".videos" />
+        <activity android:name=".quotes" />
+        <activity android:name=".stories"></activity>
     </application>
 
 </manifest>
