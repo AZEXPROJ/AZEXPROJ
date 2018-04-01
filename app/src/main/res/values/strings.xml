@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">AZEXPROJ</string>
 
+    <string name="action_settings"> put your value </string>
+    <string name="title_activity_treatment">put your value</string>
 
 </resources>
 
