@@ -9,7 +9,7 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".quotes">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -18,7 +18,7 @@
         </activity>
         <activity android:name=".motivation" />
         <activity android:name=".videos" />
-        <activity android:name=".quotes" />
+        <activity android:name=".MainActivity" />
         <activity android:name=".stories"></activity>
     </application>
 
