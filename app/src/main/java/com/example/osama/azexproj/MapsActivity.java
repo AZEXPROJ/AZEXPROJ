@@ -2,6 +2,8 @@ package com.example.osama.azexproj;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -16,6 +18,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import java.io.IOException;
+import java.util.List;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
@@ -49,10 +54,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
+                    // make a toast to inform the user what his location dependant.
+                    Toast.makeText(getApplicationContext(),"This location dependant in your internet provider",Toast.LENGTH_LONG).show();
+
                     // get the latitude
                     double latitude = location.getLatitude();
                     // get the longitude
                     double longitude = location.getLongitude();
+                    // instantiate the class, LatLng
+                    LatLng latLng = new LatLng(latitude,longitude);
+                    // instantiate the class, Geocoder
+                    Geocoder geocoder = new Geocoder(getApplicationContext());
+                    try {
+                        List<Address> addressList = geocoder.getFromLocation(latitude,longitude,1);
+                        String str = addressList.get(0).getLocality() + "," + addressList.get(0).getAdminArea();
+
+
+                        //Enable zoom in and out in map
+                        mMap.getUiSettings().setZoomControlsEnabled(true);
+
+                        // Add a marker in Sydney and move the camera
+                        mMap.addMarker(new MarkerOptions().position(latLng).title(str))
+                                .showInfoWindow();//show title auto
+
+                        //move view to the location and set zoomValue
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+
+                        //move to another location by click
+                        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                            @Override
+                            public void onMapClick(LatLng latLng) {
+                                // make a toast with new location
+                                Toast.makeText(MapsActivity.this,latLng.latitude+","+latLng.longitude,Toast.LENGTH_LONG).show();
+
+                                //clear current map from old location
+                                mMap.clear();
+
+                                // create pointer to new location (which user clicked on)
+                                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker in Location"))
+                                        .showInfoWindow();//show title auto
+
+                                //move view to the location and set zoomValue
+                                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+                            }
+                        });
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
 
                 @Override
@@ -74,11 +123,54 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, new LocationListener() {
                 @Override
                 public void onLocationChanged(Location location) {
+                    // make a toast to inform the user what his location dependant.
+                    Toast.makeText(getApplicationContext(),"This location dependant in your internet provider",Toast.LENGTH_LONG).show();
+
                     // get the latitude
                     double latitude = location.getLatitude();
                     // get the longitude
                     double longitude = location.getLongitude();
+                    // instantiate the class, LatLng
                     LatLng latLng = new LatLng(latitude,longitude);
+                    // instantiate the class, Geocoder
+                    Geocoder geocoder = new Geocoder(getApplicationContext());
+                    try {
+                        List<Address> addressList = geocoder.getFromLocation(latitude,longitude,1);
+                        String str = addressList.get(0).getLocality() + "," + addressList.get(0).getAdminArea();
+
+
+                        //Enable zoom in and out in map
+                        mMap.getUiSettings().setZoomControlsEnabled(true);
+
+                        // Add a marker in Sydney and move the camera
+                        mMap.addMarker(new MarkerOptions().position(latLng).title(str))
+                                .showInfoWindow();//show title auto
+
+                        //move view to the location and set zoomValue
+                        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+
+                        //move to another location by click
+                        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+                            @Override
+                            public void onMapClick(LatLng latLng) {
+                                // make a toast with new location
+                                Toast.makeText(MapsActivity.this,latLng.latitude+","+latLng.longitude,Toast.LENGTH_LONG).show();
+
+                                //clear current map from old location
+                                mMap.clear();
+
+                                // create pointer to new location (which user clicked on)
+                                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker in Location"))
+                                        .showInfoWindow();//show title auto
+
+                                //move view to the location and set zoomValue
+                                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+                            }
+                        });
+
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                    }
                 }
 
                 @Override
