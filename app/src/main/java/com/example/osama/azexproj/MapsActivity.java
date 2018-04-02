@@ -22,7 +22,7 @@ import com.google.android.gms.maps.model.MarkerOptions;
 import java.io.IOException;
 import java.util.List;
 
-public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
+public class MapsActivity extends FragmentActivity {
 
     private GoogleMap mMap;
     LocationManager locationManager;
@@ -34,7 +34,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
-        mapFragment.getMapAsync(this);
 
         locationManager = (LocationManager) getSystemService(LOCATION_SERVICE);
 
@@ -200,41 +199,41 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
      * it inside the SupportMapFragment. This method will only be triggered once the user has
      * installed Google Play services and returned to the app.
      */
-    @Override
-    public void onMapReady(GoogleMap googleMap) {
-//        mMap = googleMap;
-//
-//        //change map mode
-//       // mMap.setMapType(GoogleMap.);
-//
-//        //Enable zoom in and out in map
-//        mMap.getUiSettings().setZoomControlsEnabled(true);
-//
-//        // Add a marker in Sydney and move the camera
-//        LatLng sydney = new LatLng(-34, 151);
-//        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"))
-//        .showInfoWindow();//show title auto
-//
-//        //move view to the location and set zoomValue
-//        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,12));
-//
-//        //move to another location by click
-//        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
-//            @Override
-//            public void onMapClick(LatLng latLng) {
-//                // make a toast with new location
-//                Toast.makeText(MapsActivity.this,latLng.latitude+","+latLng.longitude,Toast.LENGTH_LONG).show();
-//
-//                //clear current map from old location
-//                mMap.clear();
-//
-//                // create pointer to new location (which user clicked on)
-//                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker in Location"))
-//                        .showInfoWindow();//show title auto
-//
-//                //move view to the location and set zoomValue
-//                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
-//            }
-//        });
-    }
+//    @Override
+//    public void onMapReady(GoogleMap googleMap) {
+////        mMap = googleMap;
+////
+////        //change map mode
+////       // mMap.setMapType(GoogleMap.);
+////
+////        //Enable zoom in and out in map
+////        mMap.getUiSettings().setZoomControlsEnabled(true);
+////
+////        // Add a marker in Sydney and move the camera
+////        LatLng sydney = new LatLng(-34, 151);
+////        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"))
+////        .showInfoWindow();//show title auto
+////
+////        //move view to the location and set zoomValue
+////        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney,12));
+////
+////        //move to another location by click
+////        mMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
+////            @Override
+////            public void onMapClick(LatLng latLng) {
+////                // make a toast with new location
+////                Toast.makeText(MapsActivity.this,latLng.latitude+","+latLng.longitude,Toast.LENGTH_LONG).show();
+////
+////                //clear current map from old location
+////                mMap.clear();
+////
+////                // create pointer to new location (which user clicked on)
+////                mMap.addMarker(new MarkerOptions().position(latLng).title("Marker in Location"))
+////                        .showInfoWindow();//show title auto
+////
+////                //move view to the location and set zoomValue
+////                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng,12));
+////            }
+////        });
+//    }
 }

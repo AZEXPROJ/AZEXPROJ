@@ -12,6 +12,9 @@
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity">
 
+            <meta-data
+                android:name="com.google.android.geo.API_KEY"
+                android:value="@string/google_maps_key" />
         </activity>
         <activity android:name=".motivation" />
         <activity android:name=".videos" />
@@ -27,7 +30,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Treatment"/>
+        <activity android:name=".Treatment" />
     </application>
 
 </manifest>
