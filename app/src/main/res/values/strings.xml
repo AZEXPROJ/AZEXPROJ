@@ -3,6 +3,9 @@
 
     <string name="action_settings"> put your value </string>
     <string name="title_activity_treatment">put your value</string>
+    <string name="google_maps_key">AIzaSyDgogz9T_Ntz10ky2B3rkbPX6EWNcWZQZQ</string>
+    <string name="title_activity_maps2">Map</string>
+
 
 </resources>
 
