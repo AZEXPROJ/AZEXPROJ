@@ -11,12 +11,12 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".MainActivity"></activity>
-        <activity android:name=".motivation" />
+        <activity android:name=".quotes" />
         <activity android:name=".videos" />
         <activity android:name=".Treatment" />
         <activity android:name=".stories" />
         <activity
-            android:name=".quotes"
+            android:name=".motivation"
             android:label="ذوي الهمم"
             android:theme="@style/AppTheme">
             <intent-filter>

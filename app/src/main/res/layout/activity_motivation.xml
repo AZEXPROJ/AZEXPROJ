@@ -43,7 +43,7 @@
         app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintVertical_bias="0.535"
         android:onClick="onClick"
-        />
+android:contentDescription="@string/desc"/>
 
     <ImageView
         android:id="@+id/stories"
@@ -60,7 +60,8 @@
         android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.682"
         app:layout_constraintHorizontal_bias="0.878"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:contentDescription="@string/desc"/>
 
 
     <ImageView
@@ -78,5 +79,6 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintHorizontal_bias="0.878"
         app:layout_constraintVertical_bias="0.39"
-        android:onClick="onClick"/>
+        android:onClick="onClick"
+        android:contentDescription="@string/desc"/>
 </android.support.constraint.ConstraintLayout>
