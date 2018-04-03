@@ -10,7 +10,7 @@ public class motivation extends AppCompatActivity {
 ImageView video ;
 ImageView stories;
 ImageView qoutes;
-    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,7 +19,7 @@ ImageView qoutes;
         video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( context ,videos.class);
+                Intent intent = new Intent(getApplicationContext() ,videos.class);
                 startActivity(intent);
             }
         });
@@ -27,7 +27,7 @@ ImageView qoutes;
         stories.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( context ,stories.class);
+                Intent intent = new Intent( getApplicationContext() ,stories.class);
                 startActivity(intent);
             }
         });
@@ -35,7 +35,7 @@ ImageView qoutes;
         qoutes.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent( context ,quotes.class);
+                Intent intent = new Intent( getApplicationContext() ,quotes.class);
                 startActivity(intent);
             }
         });
