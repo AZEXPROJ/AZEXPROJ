@@ -6,7 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
 import android.util.Log;
-
 public class Treatment extends AppCompatActivity {
     private static final String Tag = "Treatment";
     private SectionPageAdapter sectionPageAdapter;

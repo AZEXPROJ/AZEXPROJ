@@ -14,10 +14,10 @@
         </activity>
         <activity android:name=".motivation" />
         <activity android:name=".videos" />
-        <activity android:name=".quotes" />
+        <activity android:name=".Treatment" />
         <activity android:name=".stories" />
         <activity
-            android:name=".Treatment"
+            android:name=".quotes"
             android:label="@string/title_activity_treatment"
             android:theme="@style/AppTheme">
             <intent-filter>
