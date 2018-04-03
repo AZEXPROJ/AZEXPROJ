@@ -17,6 +17,7 @@ ImageView qoutes;
         setContentView(R.layout.activity_motivation);
 
         video = (ImageView) findViewById(R.id.video);
+
         video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
