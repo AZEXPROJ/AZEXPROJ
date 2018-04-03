@@ -18,6 +18,9 @@ ImageView qoutes;
 
         video = (ImageView) findViewById(R.id.video);
 
+
+
+
         video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
