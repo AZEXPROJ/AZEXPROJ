@@ -1,15 +1,118 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.osama.azexproj.MainActivity">
+    android:orientation="vertical"
+    tools:context="com.example.osama.azexproj.MainActivity"
+    android:background="#1e4b4b"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <ImageView
+        android:id="@+id/im"
+        android:layout_width="250dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:src="@drawable/logo"
+        android:contentDescription="@string/desc"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/treet_btn"
+            android:text="@string/treet"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/moti_btn"
+            android:text="@string/moti"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/map_btn"
+            android:text="@string/map"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="2dp"
+        android:gravity="center"
+        android:layout_weight="1">
+        <Button
+            android:id="@+id/aboutUs_btn"
+            android:text="@string/aboutUs"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/games_btn"
+            android:text="@string/games"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp"/>
+        <Button
+            android:id="@+id/active_btn"
+            android:text="@string/active"
+            android:layout_width="100dp"
+            android:layout_height="70dp"
+            android:textColor="#e4fcf7f7"
+            android:background="@drawable/buttonstyle"
+            android:shadowColor="#efa207"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="25"
+            android:layout_margin="5dp"
+            android:textSize="30sp"/>
+
+    </LinearLayout>
 
 
-
-
-    
-
-
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

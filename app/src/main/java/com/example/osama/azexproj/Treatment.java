@@ -1,5 +1,6 @@
 package com.example.osama.azexproj;
 
+
 import android.support.design.widget.TabLayout;
 import android.support.v7.app.AppCompatActivity;
 
@@ -28,8 +29,8 @@ public class Treatment extends AppCompatActivity {
 
     public void setupViewerPager (ViewPager viewPager){
         SectionPageAdapter adapter=new SectionPageAdapter(getSupportFragmentManager());
-        adapter.addFragment(new SpeechToText(),"Tap1");
-        adapter.addFragment(new TexttoSpeech(),"Tap2");
+        adapter.addFragment(new SpeechToText(),"تحـدث");
+        adapter.addFragment(new TexttoSpeech(),"اســمع");
         viewPager.setAdapter(adapter);
 
     }
