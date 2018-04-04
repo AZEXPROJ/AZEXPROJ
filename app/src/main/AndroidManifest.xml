@@ -27,6 +27,7 @@
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
         <activity android:name=".MapsActivity" />
         <activity android:name=".stories" />
         <activity
@@ -40,7 +41,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".aboutus" />
-        <activity android:name=".motivation"></activity>
+        <activity android:name=".motivation" />
     </application>
 
 </manifest>
