@@ -24,7 +24,7 @@ ImageView qoutes;
             }
         });
         stories = (ImageView) findViewById(R.id.stories);
-        video.setOnClickListener(new View.OnClickListener(){
+        stories.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent( getApplicationContext() ,stories.class);
@@ -32,7 +32,7 @@ ImageView qoutes;
             }
         });
         qoutes = (ImageView) findViewById(R.id.qoutes);
-        video.setOnClickListener(new View.OnClickListener(){
+        qoutes.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent( getApplicationContext() ,quotes.class);

@@ -15,7 +15,6 @@
         <activity android:name=".MainActivity" />
         <activity android:name=".quotes" />
         <activity android:name=".videos" />
-        <activity android:name=".Treatment" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -42,6 +41,7 @@
         </activity>
         <activity android:name=".aboutus" />
         <activity android:name=".motivation" />
+        <activity android:name=".Treatmett"></activity>
     </application>
 
 </manifest>
