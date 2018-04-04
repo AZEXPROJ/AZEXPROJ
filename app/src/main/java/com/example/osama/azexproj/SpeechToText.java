@@ -1,6 +1,4 @@
 package com.example.osama.azexproj;
-
-
 import android.app.Fragment;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,8 +14,7 @@ import java.util.ArrayList;
 import java.util.Locale;
 
 import static android.app.Activity.RESULT_OK;
-
-public class SpeechToText extends android.support.v4.app.Fragment {
+public class SpeechToText extends Fragment {
     private static final String Tag = "TableFragment";
     TextView txvResult;
     View view;
@@ -26,12 +23,9 @@ public class SpeechToText extends android.support.v4.app.Fragment {
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
          view=inflater.inflate(R.layout.speechtotext,container,false);
         txvResult = (TextView)view.findViewById(R.id.txvResult);
-
-
         return view;
     }
     public void getSpeechInput(View view) {
-
         Intent intent = new Intent(RecognizerIntent.ACTION_RECOGNIZE_SPEECH);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE_MODEL, RecognizerIntent.LANGUAGE_MODEL_FREE_FORM);
         intent.putExtra(RecognizerIntent.EXTRA_LANGUAGE, Locale.getDefault());
@@ -40,8 +34,8 @@ public class SpeechToText extends android.support.v4.app.Fragment {
        if (intent.resolveActivity(getActivity().getPackageManager()) != null) {
             startActivityForResult(intent, 10);
         } else {
-            Toast.makeText(getContext(),"Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
-           Toast.makeText(getContext(), "Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getActivity(),"Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
+           Toast.makeText(getActivity(), "Your Device Don't Support Speech Input", Toast.LENGTH_SHORT).show();
         }
     }
     @Override

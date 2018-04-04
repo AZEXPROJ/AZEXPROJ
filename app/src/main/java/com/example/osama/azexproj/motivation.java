@@ -17,10 +17,6 @@ ImageView qoutes;
         setContentView(R.layout.activity_motivation);
 
         video = (ImageView) findViewById(R.id.video);
-
-
-
-
         video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -31,7 +27,7 @@ ImageView qoutes;
         });
 
         stories = (ImageView) findViewById(R.id.stories);
-        stories.setOnClickListener(new View.OnClickListener(){
+        video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent( motivation.this ,stories.class);
@@ -40,7 +36,7 @@ ImageView qoutes;
             }
         });
         qoutes = (ImageView) findViewById(R.id.qoutes);
-        qoutes.setOnClickListener(new View.OnClickListener(){
+        video.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent( motivation.this ,quotes.class);
@@ -50,4 +46,3 @@ ImageView qoutes;
         });
     }
 }
-
