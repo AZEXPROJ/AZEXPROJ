@@ -1,6 +1,7 @@
 package com.example.osama.azexproj;
 
-import android.content.Context;
+import
+        android.content.Context;
 import android.support.test.InstrumentationRegistry;
 import android.support.test.runner.AndroidJUnit4;
 
@@ -20,7 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() throws Exception {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
-
         assertEquals("com.example.osama.azexproj", appContext.getPackageName());
     }
 }

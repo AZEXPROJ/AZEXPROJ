@@ -11,6 +11,8 @@
     <string name="active">فعاليات</string>
     <string name="aboutUs">عنــــا</string>
     <string name="desc">logo_main</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
 
 
 </resources>

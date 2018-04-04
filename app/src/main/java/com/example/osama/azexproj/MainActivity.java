@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(MainActivity.this,MapsActivity2.class);
+                Intent intent =new Intent(MainActivity.this,MapsActivity.class);
                 startActivity(intent);
             }
         });
@@ -83,4 +83,5 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 }
