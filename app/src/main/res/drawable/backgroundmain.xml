@@ -3,10 +3,10 @@
 
     <gradient
 
-        android:startColor="#175c5c"
-        android:centerColor="#3ae2e2"
-        android:endColor="#50bfce"
-        android:angle="270"
+        android:startColor="#4ecccc"
+        android:centerColor="#7aeaea"
+        android:endColor="#447b77"
+        android:angle="90"
         android:type="linear"
         />
 

@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         treet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(MainActivity.this,Treatment.class);
+                Intent intent =new Intent(MainActivity.this,Treatmett.class);
                 startActivity(intent);
             }
         });

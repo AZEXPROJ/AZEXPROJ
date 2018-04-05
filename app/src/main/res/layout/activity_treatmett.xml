@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundmain"
+    android:orientation="vertical"
+    tools:context="com.example.osama.azexproj.Treatmett">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_margin="9dp"
+        android:showDividers="beginning">
+        <TextView
+            android:id="@+id/txvResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#fffcfc"
+            android:textSize="26sp"
+            android:layout_margin="20dp"
+            android:textStyle="normal"/>
+        <ImageView
+            android:id="@+id/btnSpeak"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="55dp"
+            android:layout_gravity="center"
+            android:onClick="getSpeechInput"
+            android:src="@drawable/mic"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="9dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/etext"
+            android:hint="اكتــــــــــب شيئا"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:textColorHint="#60a699"
+            />
+        <ImageView
+            android:id="@+id/imListen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:onClick="listen"
+            android:src="@drawable/earphone"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

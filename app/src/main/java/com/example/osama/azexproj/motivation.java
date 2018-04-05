@@ -41,4 +41,3 @@ ImageView qoutes;
         });
     }
 }
-
