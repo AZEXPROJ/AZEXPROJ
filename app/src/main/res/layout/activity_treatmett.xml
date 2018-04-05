@@ -29,7 +29,7 @@
             android:layout_marginTop="55dp"
             android:layout_gravity="center"
             android:onClick="getSpeechInput"
-            android:src="@drawable/mic"/>
+            android:src="@drawable/ic_mic_black_24dp"/>
     </LinearLayout>
 
 
@@ -57,7 +57,7 @@
             android:layout_marginTop="40dp"
             android:layout_gravity="center"
             android:onClick="listen"
-            android:src="@drawable/earphone"
+            android:src="@drawable/ic_headset_black_24dp"
             />
 
 
