@@ -8,12 +8,22 @@
         android:layout_width="match_parent"
         android:layout_height="60dp">
     <EditText
-        android:id="@+id/TF_location"
+        android:id="@+id/search_edit"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:layout_weight="1"
         android:ems="10"
         android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/search_btn"
+            android:text="search"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:onClick="onClick"
+            android:background="@drawable/buttonstyle" />
 
     </LinearLayout>
 
@@ -28,11 +38,11 @@
 
     <Button
     android:id="@+id/map_btn"
-    android:text="Button"
+    android:text="Go"
     android:textColor="#FFFFFF"
     android:textSize="30sp"
     android:layout_width="match_parent"
     android:layout_height="60dp"
-    android:background="@drawable/buttonstyle"
-    />
+    android:onClick="onClick"
+    android:background="@drawable/buttonstyle" />
 </LinearLayout>
