@@ -28,6 +28,7 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
         <activity android:name=".MapsActivity"/>
+        <activity android:name=".Treatmett"/>
         <activity android:name=".stories" />
         <activity
             android:name=".splash"
